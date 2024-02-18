@@ -1,11 +1,11 @@
-import { refs } from "./refs";
+import { refs } from './refs';
 
 function on() {
-    refs.loader.classList.remove('hidden');
-  }
-  
-function off() {
-    refs.loader.classList.add('hidden');
-  }
+  refs.loader.classList.remove('hidden');
+}
 
-export const loaderRef = {on, off};
+function off() {
+  refs.loader.classList.add('hidden');
+}
+
+export const loaderRef = { on, off };
